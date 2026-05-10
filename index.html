@@ -1,6 +1,20 @@
-<html><head></head><body><script>
+<html><head></head><body>
+  
+<div id="RawBox">
+a about above acceleration acid across activity add addtion advice advise affect again age ahead air algebra all along amazing amplitude and angle ant anymore anyone apple aquamarine are array art as at atom audio avian awake away back backward banana bargaining basic bass bat bathroom be beautiful become bed bedroom beef been behind beneath beside between billion binary bird black blind blow blue blunt board body bone boolean borne boson bounce boy brave brighter brocoli broken burn but butterfly by calf call calling can canid cant carbon card carrot cat cause ceiling century chair chance change character charge chartreuse choke chord chorus circle circumfrence class claw clearly clever close club cluster coffee collaboration collapse collect collection color come comforting communicate community compass computer concert cone construct content cool correct couch craft crawl cry cube cuboid current curtain cyan dark dawn dawning day daydream decade decagon decryp decryption depend destroy diameter diamond did dining disk displacement distance divide division do document dodecahedron doesnt dog dont door down drink drum due duration dwarf ear easy effect eight elegance element elephant else emotion encrypt encryption equal eraser evening everything excite excited exercise expand express expression extend eye f face faced fade fake fascinating fears feel feeling felis felt fermion filter finally find fine fish five flag floating floor flower food for force fork four foward frame freaking frequency friction from front function galaxy game garbage gas get gets getting giraffe girl glory graphic grass gravity gray great green grey grow grows hallway hand happy hate have head hear heart heat heed heptagon heroes hexagon hexahedron hole hop hoping horizon hot hour how hue hundred hunger hurt hydrogen i identity idol if in incline initial integer is isnt isocahedron it its jam jerk job juice jump jungle just kangaroo key keyboard keycard kit kitchen kite knife knight know knowledge lamp language last laugh laundry lavatory leaf left leg lemon lepton let life light like line linear lion liquid living logic lonely lose lost love machine made magenta make makes man marigold mascot mass matrix matter may maybe me meaning meant meme midnight million mind minute miss modulate monitor month more morning mouse mouth move multiplication multiply music must my myself name nebula need needed neutrino never new night nightmare nine nitrogen no nonagon nostalgic not note now number obsession octagon octahedron octave of oh on one only open or orange other otherside out overflow ox oxygen paper parallelogram parameter part particles paw peacock pelvis pencil pentagon perform performance petal photo photography pinch pitch plasma plate pop pot potato powder power practical practice practise pretty process program promise protractor purple put pyramid quadrillion quark quicker quintillion rack radius rake rat rate raw react real really rectangle red regular relieve render replace return rhombus right ripe role rough ruler run sad said sank saturate saturation say science scorpion script second see seem send serve seven sextillion sharp sharpener shelf should shouldnt shout side sigh signs since sincerely six skin skip sky sleep smart smooth snake snore snow so solid someone something sorry soul sound space spade speak speed sphere spin split spoon sprint square stars stirred stock stone stop story string struct struggle stupid subatomic subscribe subtract subtraction suffer suffering surface survive system table tail take talk te tea tell temperature tempt ten tetrahedron text than that the then theory there they think thinking this thousand three through tied to toilet tone tooth torque traffic trapezoid tree triangle tries trill trillion trunk try turqoise two under understand up urge use vain var vector velocity vermillion vibrance vibrant video violet void volunteer wait wake walk walked wall wanna want warm was waste wasting water ways we wears week well what when while whisker white who why will window wing wish with without woman wonder work would write wrong xor year yellow yes yet you your yourself zebra zen zone
 
-let rawString = "this is a test to see if this is actually working as intended lemon apple knife butterfly"
+zone zen rake rack shelf equal filter coffee tea bounce water power powder torque friction force mass incline angle system linear line algebra matrix vector multiply addtion subtraction multiplication divide division subtract add modulate change
+</div>
+<div>
+
+
+
+</div>
+  
+<script>
+
+let rawString = document.getElementById("RawBox").textContent.toLowerCase().replaceAll("\n"," ").replace(/\.|,|\?|\(|\)|\'|\"|:|-/g,"").replace(/youre|im|isn’t|yeah/g,"")
+
 let Array_Pass0 = rawString.split(" ").sort()
 let Array_Pass1 = []
 
@@ -23,13 +37,8 @@ while(Array_Pass0.length > 0)
 	}
 }
 
-console.log(Array_Pass1)
+Array_Pass1.reverse()
 
-
-window.addEventListener("message", (event) => {
-  window.parent.postMessage(Array_Pass1);
-});
-
-
+console.log(Array_Pass1.join(" "))
   
 </script></body></html>
