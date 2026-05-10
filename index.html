@@ -1,9 +1,35 @@
 <html><head></head><body><script>
 
-let rawString = "apple lemon knife butterfly"
+let rawString = "this is a test to see if this is actually working as intended lemon apple knife butterfly"
+let Array_Pass0 = rawString.split(" ").sort()
+let Array_Pass1 = []
+
+while(Array_Pass0.length > 0)
+{
+	if ( Array_Pass1.length > 0 )
+	{
+		if (Array_Pass0[0] === Array_Pass1[0])
+		{
+		  Array_Pass0.shift() //throw it away
+		}
+		else
+		{
+			Array_Pass1.unshift( Array_Pass0.shift() )//from Pass0 to Pass1
+		}
+	}
+	else
+	{
+		Array_Pass1.unshift( Array_Pass0.shift() )
+	}
+}
+
+console.log(Array_Pass1)
+
 
 window.addEventListener("message", (event) => {
-  event.source.postMessage(rawString);
+  window.parent.postMessage(Array_Pass1);
 });
+
+
   
 </script></body></html>
